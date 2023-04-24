@@ -1,7 +1,7 @@
 # prueba_repository
 prueba, solo de prueba
 git init \
-git add <archivo> \
+git add archivo \
 git commit -m "first commit" \
 git branch -M main \
 git remote add origin <URL del nuevo repositorio vacío en GitHub> \
