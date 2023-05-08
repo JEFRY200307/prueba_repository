@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5e271484fc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <title>Nuweb</title>
+</head>
+
+<body data-spy="scroll">
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <div class="container-fluid">
+      <img
+        src="data:image/png;base64,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"
+        alt="logo" width="50" height="50">
+      <a class="navbar-brand" href="/">Nuweb</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/comisiones">COMISIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/eventos">EVENTOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              href="/areas">AREAS</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/areas/pmo">PMO</a></li>
+              <li><a class="dropdown-item" href="/areas/investigacion">INVESTIGACION</a></li>
+              <li><a class="dropdown-item" href="/areas/industrial">INDUSTRIAL</a></li>
+              <li><a class="dropdown-item" href="/areas/sistemas">SISTEMAS</a></li>
+              <li><a class="dropdown-item" href="/areas/gth">GTH</a></li>
+              <li><a class="dropdown-item" href="/areas/marketing">MARKETING</a></li>
+              <li><a class="dropdown-item" href="/areas/logistica">LOGISTICA</a></li>
+              <li><a class="dropdown-item" href="/areas/rrpp">RR.PP.</a></li>
+            </ul>
+          <li><button onclick="location.href='nosotros.html'">Sobre nosotros</button></li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/testimonios">TESTIMONIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inscripciones">INSCRIPCIONES</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <h1 style="text-align:center; font-size:3em;">¡Bienvenidos a nuestro centro!</h1>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <div style="margin-right:2em;">
+          <h2>Ubicación:</h2>
+          <p>Estamos ubicados en la calle 213, Rimac Lima en la pabellon S4</p>
+          <h2>Correo:</h2>
+          <p>Puedes contactarnos en nuestro correo electrónico: info@nuestraempresa.com</p>
+          <h2>Redes Sociales:</h2>
+          <ul style="list-style:none; display:flex;">
+            <li style="margin-right:1em;"><a href="https://www.facebook.com/nuestraempresa"><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
+                  alt="Facebook" width="50" height="50"></a></li>
+            <li style="margin-right:1em;"><a href="https://twitter.com/nuestraempresa">
+                <img
+                  src="https://e7.pngegg.com/pngimages/804/985/png-clipart-social-media-logo-computer-icons-information-twitter-logo-media.png"
+                  alt="Twitter" width="50" height="50"></a></li>
+            <li><a href="https://www.instagram.com/nuestraempresa">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png"
+                  alt="Instagram" width="50" height="50"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Descripción:</h2>
+          <p style="text-align:justify;">Somos una organizacion dedicada a mejorar las hablidades blandas de los
+            estudiantes
+            siendo una de las mejores en el mercado,
+            contamos con un equipo de profesionales</p>
+          <h2>Google Maps:</h2>
+          <div style="position:relative; width:100%; height:0; padding-bottom:56.25%;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.865952604856!2d-99.15942478540142!3d19.436444486876694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc3d7dcd4bb3%3A0xd8b206c986828012!2sCalle%20123%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1620282117455!5m2!1ses!2smx"
+              style="position:absolute; width:100%; height:100%; top:0; left:0; border:0;" allowfullscreen=""
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="white-section footer">
+    <div class="scroll-to-top-container">
+      <hr class="footer-hr">
+      <a href="#navbar" class="scroll-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md">
+          <h5 class="footer-heading">Acerca de Núcleo</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/mision">Misión</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/vision">Visión</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/organigrama">Organigrama</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="footer-heading">Redes Sociales</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Youtube</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Tiktok</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="footer-heading">Contáctanos</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">928989898</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Escribenos</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <img class="mb-2" src="public/images/logo-nucleo.png" alt="" width="50" height="50">
+          <small class="d-block mb-3 text-muted">&copy; 2023</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
